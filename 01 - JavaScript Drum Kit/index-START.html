@@ -64,6 +64,9 @@
         if (!audio) return; // stop the function from running altogether
         audio.currentTime = 0; //rewind to the start of audio - lets you play more quickly
         audio.play();
+        key.classList.add('playing');
+        key.classList.remove('playing');
+        key.classList.toggle('playing');
       });
     </script>
   </body>
